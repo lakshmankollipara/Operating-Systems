@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+FILE *fp1,*fp2;
+int i;
+char c;
+fp1=fopen("a.txt","r");
+fp2=fopen("b.txt","w");
+while(! feof (fp1))
+{
+c=fgetc(fp1);
+fputc=(c,fp2);
+}
+printf("contents of a.txt are copied to b.txt");
+fclose(fp1);
+fclose(fp2);
+}
